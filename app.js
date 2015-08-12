@@ -9,7 +9,8 @@ var array = [
 var express = require('express');
 var app = new express();
 var hbs = require('hbs');
-app.use(express.static('public'));//000
+app.use(express.static('public'));//
+app.use(express.static('bower_components'));
 app.set('view engine','html');
 app.engine('html', hbs.__express);
 
